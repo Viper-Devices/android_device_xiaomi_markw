@@ -340,13 +340,11 @@ case "$target" in
                 echo "85 1401600:80" > /sys/devices/system/cpu/cpufreq/interactive/target_loads
                 echo 39000 > /sys/devices/system/cpu/cpufreq/interactive/min_sample_time
                 echo 652800 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+                echo 652800 > /sys/devices/system/cpu/cpufreq/interactive/screen_off_maxfreq
 
-                ### CPU_INPUT_BOOST
-                # Only boost power cores
-                # echo "652800 1804800" > /sys/kernel/cpu_input_boost/ib_freqs
-                # Input boost duration
-                # echo 440 > /sys/kernel/cpu_input_boost/ib_duration_ms
-                # echo 1 > /sys/kernel/cpu_input_boost/enabled
+                ### CPU_BOOST
+                echo 1804800 > /sys/module/cpu_boost/parameters/input_boost_freq
+                echo 440 > /sys/module/cpu_boost/parameters/input_boost_ms
 
                 # Virtual memory tweaks
                 echo 10 > /proc/sys/vm/swappiness
