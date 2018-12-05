@@ -149,7 +149,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 TARGET_COPY_OUT_VENDOR := vendor
 
-# Exfat
+# Extended Filesystem Support (exFAT)
 TARGET_EXFAT_DRIVER := sdfat
 
 # HIDL
