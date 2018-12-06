@@ -2,8 +2,8 @@
 # system.prop for markw
 #
 
-# Art
-ro.sys.fw.dex2oat_thread_count=4
+# (ART) Dex2oat threads for faster app installation
+ro.sys.fw.dex2oat_thread_count=8
 
 # Audio
 vendor.voice.playback.conc.disabled=true
