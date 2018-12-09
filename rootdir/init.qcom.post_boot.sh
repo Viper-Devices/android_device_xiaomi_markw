@@ -412,8 +412,8 @@ esac
 # Post-setup services
 case "$target" in
     "msm8937" | "msm8953")
-        echo 512 > /sys/block/mmcblk0/bdi/read_ahead_kb
-        echo 512 > /sys/block/mmcblk0/queue/read_ahead_kb
+        echo 1024 > /sys/block/mmcblk0/bdi/read_ahead_kb
+        echo 1024 > /sys/block/mmcblk0/queue/read_ahead_kb
         setprop sys.post_boot.parsed 1
     ;;
 
