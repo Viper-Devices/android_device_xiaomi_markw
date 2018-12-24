@@ -15,7 +15,7 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package com.mdroid.settings.device;
+package com.lineage.settings.device;
 
 import java.io.File;
 import java.io.FileNotFoundException;
