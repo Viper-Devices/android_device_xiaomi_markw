@@ -414,8 +414,9 @@ PRODUCT_PACKAGES += \
 
 # Markw-specific Apps
 PRODUCT_PACKAGES += \
-    XiaomiDoze
-
+    XiaomiDoze \
+    XiaomiParts
+	
 #Favorite Prebuilt Apps
 PRODUCT_PACKAGES += \
     EnhancedIME\
