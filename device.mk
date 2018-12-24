@@ -412,6 +412,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     chargeonlymode
 
+# Markw-specific Apps
+PRODUCT_PACKAGES += \
+    XiaomiDoze
+
 #Favorite Prebuilt Apps
 PRODUCT_PACKAGES += \
     EnhancedIME\
