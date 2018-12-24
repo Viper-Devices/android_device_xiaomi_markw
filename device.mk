@@ -419,7 +419,7 @@ PRODUCT_PACKAGES += \
 	
 #Favorite Prebuilt Apps
 PRODUCT_PACKAGES += \
-    EnhancedIME\
+	EnhancedIME\
 	Google-Markup-Port-O\
-    MiXplorer \
+	MiXplorer \
 	Retro-Music
