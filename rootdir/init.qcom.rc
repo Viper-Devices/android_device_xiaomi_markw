@@ -50,8 +50,8 @@ on init
     chmod 0660 /sys/fs/cgroup/memory/bg/tasks
 
 	# Implementation of the power-off charging animation from MIUI
-    mount none /sbin/chargeonlymode /sbin/charger bind	
-	
+    mount none /sbin/chargeonlymode /sbin/charger bind
+
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
 
@@ -165,6 +165,12 @@ on boot
 
     # bond0 used by FST Manager
     chown wifi wifi /sys/class/net/bond0/bonding/queue_id
+
+    # Flashlight
+    chown root system /sys/devices/soc/qpnp-flash-led-24/leds/led:torch_0/max_brightness
+    chmod 0660 /sys/devices/soc/qpnp-flash-led-24/leds/led:torch_0/max_brightness
+    chown root system /sys/devices/soc/qpnp-flash-led-24/leds/led:torch_1/max_brightness
+    chmod 0660 /sys/devices/soc/qpnp-flash-led-24/leds/led:torch_1/max_brightness
 
     # Goodix Fingerprint
     chown system system /dev/goodix_fp
