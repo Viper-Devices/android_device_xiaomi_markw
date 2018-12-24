@@ -24,3 +24,11 @@ Copyright 2017 - LineageOS
 ## Device Picture
 
 ![Xiaomi Redmi 4 Prime](http://cdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-4-prime-2.jpg "Xiaomi Redmi 4 Prime")
+
+| This Device Tree also has:|
+| :---------------------- |
+| -my favorite prebuilt apps ---> https://github.com/NotesOfReality/android_device_xiaomi_markw/commit/781c482c122deff0a96428c04b7cdb403bc94c39 |
+| -a custom "Ambient Display/Doze" package added from MiracleDroid-HnT (thanks @Razziell and @Hikari-no-Tenshi) |
+| -a custom "Device Parts/Settings" package called "XiaomiParts" (thanks @Razziell and @Hikari-no-Tenshi) |
+
+If you're building LineageOS 15.1 you need some adaptations to implement these two latest packages/build modules, look at the modifications I've done to lineage-15.1 https://github.com/NotesOfReality/android_frameworks_base--DIFF/tree/lineage-15.1/ and https://github.com/NotesOfReality/android_packages_apps_Settings/tree/lineage-15.1/ .
