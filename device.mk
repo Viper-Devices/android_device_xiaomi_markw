@@ -419,4 +419,4 @@ PRODUCT_PACKAGES += \
 	Google-Markup-Port-O\
 	MiXplorer \
 	Retro-Music\
-        YouTube-Vanced
+        Mint-Browser
