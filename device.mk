@@ -412,14 +412,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     chargeonlymode
 
-# Markw-specific Apps
-PRODUCT_PACKAGES += \
-    XiaomiDoze \
-    XiaomiParts
-	
+
 #Favorite Prebuilt Apps
 PRODUCT_PACKAGES += \
 	EnhancedIME\
 	Google-Markup-Port-O\
 	MiXplorer \
-	Retro-Music
+	Retro-Music\
+        YouTube-Vanced
