@@ -1,2 +1,0 @@
-# Allow init to mount offmode charging daemon (Implementation of the power-off charging animation from MIUI)
-allow init rootfs:file mounton;

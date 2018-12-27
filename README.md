@@ -25,6 +25,9 @@ Copyright 2017 - LineageOS
 
 ![Xiaomi Redmi 4 Prime](http://cdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-4-prime-2.jpg "Xiaomi Redmi 4 Prime")
 
+I suggest you to use this branch (lineage-15.1) instead of the "MiracleDROID" one if the ROM you want to build has the "lineage-sdk" https://github.com/LineageOS/android_lineage-sdk/tree/lineage-15.1 and/or the "LineageParts" https://github.com/LineageOS/android_packages_apps_LineageParts/tree/lineage-15.1 repos in its manifests repo https://github.com/LineageOS/android/tree/lineage-15.1 / https://github.com/AICP/platform_manifest/tree/o8.1 .
+The main/fundamental reason of this suggestion are the overlay/s folder/s in these two branches.
+
 | This Device Tree also has:|
 | :---------------------- |
 | -my favorite prebuilt apps ---> https://github.com/NotesOfReality/android_device_xiaomi_markw/commit/781c482c122deff0a96428c04b7cdb403bc94c39 |
