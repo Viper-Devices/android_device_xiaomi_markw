@@ -49,9 +49,6 @@ on init
     chown root system /sys/fs/cgroup/memory/bg/tasks
     chmod 0660 /sys/fs/cgroup/memory/bg/tasks
 
-	# Implementation of the power-off charging animation from MIUI
-    mount none /sbin/chargeonlymode /sbin/charger bind
-
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
 
@@ -530,6 +527,12 @@ service ril-daemon2 /vendor/bin/hw/rild -c 2
     user radio
     group radio cache inet misc audio sdcard_r sdcard_rw diag oem_2901 log
     capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
+
+# Implementation of the power-off charging animation from MIUI
+service charger /sbin/chargeonlymode
+    class charger
+    group system graphics
+    seclabel u:r:charger:s0
 
 service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqbalance.conf
     class core
