@@ -1,4 +1,4 @@
-package com.mdroid.settings.device.utils;
+package com.lineage.settings.device.utils;
 
 import android.content.Context;
 import android.util.AttributeSet;

@@ -15,7 +15,7 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package com.mdroid.settings.device;
+package com.lineage.settings.device;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -32,8 +32,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 
 import android.app.ActionBar;
-import com.mdroid.settings.device.utils.SeekBarPreference;
-import com.mdroid.settings.device.R;
+import com.lineage.settings.device.utils.SeekBarPreference;
+import com.lineage.settings.device.R;
 
 public class DisplayCalibration extends PreferenceActivity implements
         OnPreferenceChangeListener {
