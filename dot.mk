@@ -17,7 +17,7 @@
 $(call inherit-product, device/xiaomi/markw/full_markw.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/dot/config/common_full_phone.mk)
+$(call inherit-product, vendor/dot/config/common.mk)
 
 PRODUCT_NAME := dot_markw
 BOARD_VENDOR := Xiaomi
