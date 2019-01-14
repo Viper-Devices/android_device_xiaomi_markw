@@ -17,9 +17,12 @@
 $(call inherit-product, device/xiaomi/markw/full_markw.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/dot/config/common.mk)
+$(call inherit-product, vendor/viper/config/common_full_phone.mk)
 
-PRODUCT_NAME := dot_markw
+# Its Official ViperOS
+VIPER_BUILD_TYPE := OFFICIAL
+
+PRODUCT_NAME := viper_markw
 BOARD_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
