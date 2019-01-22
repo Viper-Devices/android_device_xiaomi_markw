@@ -46,5 +46,7 @@
          config to 7. -->
     <integer name="config_deviceHardwareKeys">71</integer>
      
+     <!-- Whether to cleanup fingerprints upon connection to the daemon and when user switches -->
+    <bool name="config_cleanupUnusedFingerprints">false</bool>
 </resources>
 
