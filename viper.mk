@@ -22,6 +22,10 @@ $(call inherit-product, vendor/viper/config/common_full_phone.mk)
 # Its Official ViperOS
 VIPER_BUILD_TYPE := OFFICIAL
 
+# Maintainer ViperOS
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.viper.maintainer=DarkAngelGR
+
 PRODUCT_NAME := viper_markw
 BOARD_VENDOR := Xiaomi
 
@@ -30,6 +34,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=markw \
     PRIVATE_BUILD_DESC="markw-user 6.0.1 MMB29M V9.6.2.0.MBEMIFD release-keys"
-	DEVICE_MAINTAINERS="DarkAngelGR"
 
 BUILD_FINGERPRINT := Xiaomi/markw/markw:6.0.1/MMB29M/V9.6.2.0.MBEMIFD:user/release-keys
